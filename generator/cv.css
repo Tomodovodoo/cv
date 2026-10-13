@@ -1,0 +1,123 @@
+/* A4 editorial CV. All dimensions are physical print dimensions. */
+:root {
+  --navy: #091c33;
+  --ink: #394457;
+  --blue: #2979cc;
+  --rule: #aec8df;
+  --side-ink: #c7dced;
+  --side-blue: #79b9ec;
+  --sidebar: 50.5mm;
+  --serif: "Liberation Serif", "Times New Roman", Times, serif;
+  --sans: "Liberation Sans", Arial, Helvetica, sans-serif;
+}
+* { box-sizing: border-box; }
+html { margin: 0; padding: 0; background: #e8edf2; }
+body { margin: 0; padding: 24px; font-family: var(--sans); color: var(--ink); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid #65aaf0; outline-offset: 3px; }
+.page { width: 210mm; height: 297mm; position: relative; margin: 0 auto; background: #fff; box-shadow: 0 8px 45px #10263b24; }
+/* The decorative layer is separate from live text. Nothing clips the content. */
+.sidebar { position: absolute; inset: 0 auto 0 0; width: var(--sidebar); color: var(--side-ink); }
+.sidebar-art { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.sidebar-art > svg { position: absolute; display: block; width: 100%; }
+.sidebar-background { inset: 0; height: 100%; }
+.orbits { left: 0; top: 127mm; height: 88.65mm; }
+.mountains { left: 0; bottom: 0; height: 46mm; }
+.contact { position: absolute; top: 66mm; left: 8.4mm; right: 5.8mm; display: flex; flex-direction: column; gap: 5.8mm; font-size: 8.5pt; line-height: 1.36; }
+.contact-row { display: flex; align-items: flex-start; gap: 3.1mm; }
+.contact-icon { width: 4.05mm; flex: 0 0 4.05mm; padding-top: .1mm; color: #b3d5ee; }
+.contact-icon svg { display: block; width: 100%; height: 4.3mm; }
+.contact-icon.location svg { width: 3.15mm; margin-inline: auto; }
+.contact-text { min-width: 0; }
+.contact-text span { display: block; }
+.sidebar a:hover { color: #fff; }
+.side-block { position: absolute; left: 8.7mm; right: 8.7mm; padding-top: 5.7mm; border-top: .23mm solid #a1c9e7; font-size: 8.7pt; line-height: 1.44; }
+.side-block h2 { font-family: var(--serif); font-size: 13.4pt; font-weight: 400; line-height: 1.2; color: var(--side-blue); margin: 0 0 3mm; }
+.recognition { top: 182mm; }
+.recognition ul { margin: 0; padding-left: 3.15mm; }
+.recognition li { padding-left: .1mm; margin: 0 0 2.1mm; }
+.recognition li::marker { font-size: 7.5pt; }
+.languages { top: 235.1mm; }
+.languages p { margin: 0; }
+.main { position: relative; margin-left: var(--sidebar); padding: 8.5mm 7.7mm 12.7mm 8.2mm; height: 100%; display: flex; flex-direction: column; justify-content: space-between; gap: 4.8mm; }
+.header { padding-bottom: 5.3mm; position: relative; z-index: 0; }
+/* Soft cloud wash behind the name, echoing the sidebar blues and fading out before Profile. */
+.header::before { content: ""; position: absolute; z-index: -1; inset: -8.5mm -7.7mm -4mm -8.2mm;
+  background:
+    radial-gradient(ellipse 38% 62% at 88% 22%, #c9def0b0, #c9def000 72%),
+    radial-gradient(ellipse 45% 55% at 62% 0%, #d6e7f5c0, #d6e7f500 70%),
+    radial-gradient(ellipse 34% 48% at 30% 18%, #e1edf8b8, #e1edf800 70%),
+    radial-gradient(ellipse 30% 40% at 4% 70%, #cfe2f2a0, #cfe2f200 72%),
+    linear-gradient(90deg, #dbe8f4 0%, #edf4fa 55%, #e3eef8 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 45%, transparent 100%); mask-image: linear-gradient(to bottom, #000 45%, transparent 100%); }
+h1 { color: #06182b; font-family: var(--serif); font-weight: 700; font-size: 40.5pt; letter-spacing: -1.05pt; line-height: .99; margin: 0 0 1.9mm; }
+.role-line { font-family: var(--serif); color: #256eb6; font-size: 12.8pt; line-height: 1.13; font-weight: 700; margin: 0 0 3.25mm; white-space: nowrap; }
+.role-line .divider { color: #76a5cf; font-weight: 400; padding-inline: 1mm; }
+.header-location { font-size: 9.2pt; line-height: 1.2; color: #576e89; display: flex; gap: 2.1mm; align-items: center; margin: 0; }
+.header-location svg { width: 2.8mm; height: 3.7mm; color: #65849f; }
+.section { break-inside: avoid; }
+.section-heading { display: flex; align-items: center; gap: 3mm; font-family: var(--serif); font-size: 15pt; line-height: 1.12; font-weight: 700; color: var(--navy); margin: 0 0 2.5mm; letter-spacing: -.15pt; }
+.section-heading::after { content: ""; flex: 1; min-width: 5mm; height: .21mm; margin-top: 1.2mm; background: var(--rule); }
+p { margin: 0; }
+.profile-copy { font-size: 9.15pt; line-height: 1.4; }
+.entries { display: flex; flex-direction: column; gap: 3.6mm; }
+.entry { position: relative; margin-left: 1.55mm; padding-left: 5.5mm; border-left: .21mm solid #bed5e8; }
+.entry::before { content: ""; position: absolute; width: 2.3mm; height: 2.3mm; top: .72mm; left: -1.25mm; border-radius: 50%; background: #2c80d8; border: .15mm solid #1d6aba; box-shadow: 0 0 0 .63mm #fff; }
+.entry-head { display: flex; align-items: baseline; gap: 2.3mm; justify-content: space-between; }
+h3 { font-family: var(--serif); font-size: 10.65pt; font-weight: 700; line-height: 1.15; color: var(--navy); margin: 0; }
+h3 .org { font-family: var(--sans); font-weight: 400; color: #2679c7; font-size: 9.75pt; }
+h3 .divider { color: #98b6d2; font-family: var(--sans); font-weight: 400; padding-inline: .6mm; }
+.entry-date { flex: 0 0 auto; color: #2677c7; font-size: 8.5pt; line-height: 1.25; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.publication .entry-head { display: block; position: relative; }
+.publication h3 { max-width: 100%; padding-right: 0; font-size: 10.25pt; line-height: 1.12; }
+.publication .entry-date { display: block; margin-top: 1.1mm; }
+.publication-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2mm 1.5mm; font-size: 8.55pt; line-height: 1.32; margin-top: 1.1mm; }
+.authors { color: #485568; }
+.pub-link { color: #286fac; font-size: 8.35pt; white-space: nowrap; }
+.entry ul { padding: 0 0 0 3.65mm; margin: 1.4mm 0 0; font-size: 9pt; line-height: 1.34; }
+.entry li { padding-left: .55mm; margin: 0 0 .5mm; }
+.entry li:last-child { margin-bottom: 0; }
+.entry li::marker { color: #3c485b; font-size: 7pt; }
+.bullet-link { text-decoration: none; }
+.thesis { font-size: 8.8pt; line-height: 1.27; margin-top: 1.5mm; color: #414d61; }
+#education h3 { font-size: 10.3pt; }
+#education h3 .org { color: var(--navy); font-family: var(--serif); font-size: 10.3pt; font-weight: 700; }
+#algorithms h3 { font-size: 10.35pt; }
+::selection { background: #cfe4fb; color: #11283b; }
+@page { size: A4; margin: 0; }
+@media print {
+  html, body { width: 210mm; margin: 0; padding: 0; background: #fff; }
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { margin: 0; box-shadow: none; break-after: avoid; }
+  a { text-decoration: none; }
+}
+@media screen and (max-width: 820px) {
+  body { padding: 12px; }
+  .page { margin-left: 0; }
+}
+/* Keep the publication date on the same right-hand alignment as other entries. */
+.publication .entry-head { display: flex; align-items: baseline; gap: 3mm; }
+.publication h3 { font-size: 10.6pt; line-height: 1.17; }
+.publication .entry-date { display: inline; margin-top: 0; }
+.publication-meta { column-gap: 2mm; }
+.pub-link::before { content: "|"; color: #9ab5cf; padding-right: 1.5mm; }
+/* Keep PDF text painting in section order, alongside semantic HTML order. */
+.section { position: relative; }
+.publication .entry-head { position: static; }
+
+/* The portrait's original skin and cap pixels remain unchanged. Its dark blue
+   backdrop is transparent and its paint texture is tinted to this sidebar.
+   This PNG alpha composition is consistent in browser and PDF renderers. */
+.portrait {
+  position: absolute;
+  top: 3mm;
+  left: .75mm;
+  width: 49mm;
+  height: 58.8mm;
+  margin: 0;
+}
+.portrait img { display: block; width: 100%; height: 100%; object-fit: contain; }
+
+/* Keep short technical units together without forcing paragraph-wide breaks. */
+.nowrap { white-space: nowrap; }

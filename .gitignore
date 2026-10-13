@@ -1,0 +1,12 @@
+# Only the CV itself is published. Everything else in this folder stays local:
+# archive/, documents/, photos/, personal/ (sensitive!), .venv/ and private notes.
+/*
+!/.gitignore
+!/README.md
+!/build.cmd
+!/publish.cmd
+!/generator/
+!/latest/
+!/docs/
+__pycache__/
+/generator/review_notes.json

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tom de Groot. AI engineer working on purchasing algorithms, agent orchestration, Lean formalization and scientific machine learning.">
+  <meta name="author" content="Tom de Groot">
+  <title>Tom de Groot | CV</title>
+  <style>{{ css | safe }}</style>
+</head>
+<body>
+  <article class="page" aria-label="Curriculum vitae of {{ cv.name }}">
+
+    <main class="main">
+      <header class="header">
+        <h1>{{ cv.name }}</h1>
+        <p class="role-line">{{ cv.role }}<span class="divider">|</span>{{ cv.specialism }}</p>
+      </header>
+      <section class="section" id="profile" aria-labelledby="profile-heading">
+        <h2 class="section-heading" id="profile-heading">Profile</h2>
+        <p class="profile-copy">{{ cv.profile | typeset }}</p>
+      </section>
+      {% for section in cv.sections %}
+      <section class="section" id="{{ section.id }}" aria-labelledby="{{ section.id }}-heading">
+        <h2 class="section-heading" id="{{ section.id }}-heading">{{ section.title }}</h2>
+        <div class="entries">
+          {% for entry in section.entries %}
+          <section class="entry {{ entry.get('class','') }}" aria-label="{{ entry.title }}">
+            <div class="entry-head">
+              <h3>{% if entry.url %}<a href="{{ entry.url }}">{% if entry.get('class') == 'publication' %}{% set parts = entry.title.split(': ', 1) %}{{ parts[0] }}:<br>{{ parts[1] }}{% else %}{{ entry.title }}{% endif %}</a>{% else %}{{ entry.title }}{% endif %}{% if entry.organization %}<span class="divider">|</span><span class="org">{% if entry.organization_url %}<a href="{{ entry.organization_url }}">{{ entry.organization }}</a>{% else %}{{ entry.organization }}{% endif %}</span>{% endif %}</h3>
+              {% if entry.date %}<span class="entry-date">{{ entry.date }}</span>{% endif %}
+            </div>
+            {% if entry.authors or entry.publication %}
+            <div class="publication-meta">
+              {% if entry.authors %}<span class="authors">{{ entry.authors }}</span>{% endif %}
+              {% if entry.publication %}<a class="pub-link" href="{{ entry.publication.url }}">{{ entry.publication.label }}</a>{% endif %}
+            </div>
+            {% endif %}
+            {% if entry.thesis %}<p class="thesis">Thesis: {{ entry.thesis }}</p>{% endif %}
+            <ul>{% for bullet in entry.bullets %}<li>{% if entry.bullet_urls %}<a class="bullet-link" href="{{ entry.bullet_urls[loop.index0] }}">{{ bullet | typeset }}</a>{% else %}{{ bullet | typeset }}{% endif %}</li>{% endfor %}</ul>
+          </section>
+          {% endfor %}
+        </div>
+      </section>
+      {% endfor %}
+    </main>
+    <aside class="sidebar" aria-label="Public profiles, recognition and languages">
+      <div class="sidebar-art" aria-hidden="true">{{ artwork | safe }}</div>
+      <figure class="portrait">
+        <img src="{{ portrait_data_uri }}" width="1280" height="1536" alt="{{ cv.portrait.alt }}">
+      </figure>
+      <nav class="contact" aria-label="Location and public profiles">
+        <div class="contact-row">
+          <span class="contact-icon location" aria-hidden="true">{{ icons.location | safe }}</span>
+          {% set loc = cv.location.split(", ", 1) %}<div class="contact-text">{% if loc|length == 2 %}<span>{{ loc[0] }},</span><span>{{ loc[1] }}</span>{% else %}<span>{{ cv.location }}</span>{% endif %}</div>
+        </div>
+        {% for link in cv.links %}
+        <a class="contact-row" href="{{ link.url }}" aria-label="{{ cv.name }} on {{ link.label }}">
+          <span class="contact-icon" aria-hidden="true">{{ icons[link.icon] | safe }}</span>
+          <span class="contact-text">{% for line in link.lines %}<span>{{ line }}</span>{% endfor %}</span>
+        </a>
+        {% endfor %}
+      </nav>
+      <section class="side-block recognition" aria-labelledby="recognition-heading">
+        <h2 id="recognition-heading">Recognition</h2>
+        <ul>{% for item in cv.recognition %}<li>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</li>{% endfor %}</ul>
+      </section>
+      <section class="side-block languages" aria-labelledby="languages-heading">
+        <h2 id="languages-heading">Languages</h2>
+        <p>{{ cv.languages }}</p>
+      </section>
+    </aside>
+  </article>
+</body>
+</html>

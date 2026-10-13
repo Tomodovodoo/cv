@@ -1,0 +1,11 @@
+Font Awesome Free 6.7.2, copyright Fonticons, Inc.
+
+SVG icons used: GitHub, LinkedIn, X (x-twitter), code, location-dot.
+These icons are licensed under CC BY 4.0.
+https://fontawesome.com/license/free
+https://creativecommons.org/licenses/by/4.0/
+
+The code icon is a generic programming symbol, not the Codewars logo.
+Brand icons remain subject to the rights of their respective owners.
+
+Modification: SVG fills inherit the document colour through currentColor.

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="252" height="231" viewBox="0 0 252 231" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="haze" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#25405a" stop-opacity="0"/>
+      <stop offset=".4" stop-color="#25405a" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#091b2b" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#142b3e"/><stop offset="1" stop-color="#0b1e2e"/>
+    </linearGradient>
+    <linearGradient id="mid" x1="0" y1="0" x2=".8" y2="1">
+      <stop stop-color="#0d2537"/><stop offset="1" stop-color="#081b2a"/>
+    </linearGradient>
+    <linearGradient id="near" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0a2030"/><stop offset=".65" stop-color="#071927"/><stop offset="1" stop-color="#071724"/>
+    </linearGradient>
+    <linearGradient id="fore" x1="0" y1="0" x2="1" y2=".8">
+      <stop stop-color="#102638"/><stop offset="1" stop-color="#081a28"/>
+    </linearGradient>
+  </defs>
+  <path d="M0 0H252V231H0z" fill="url(#haze)"/>
+  <!-- Distant ridge: two unequal peaks, with the tallest just right of centre. -->
+  <path d="M0 59L24 47L46 40L87 64L101 59L120 55L178 29L197 42L220 53L252 65V231H0Z" fill="url(#far)"/>
+  <path d="M0 59L46 40L63 57L39 76L0 94Z" fill="#1b3348" fill-opacity=".26"/>
+  <path d="M87 64L120 55L178 29L163 53L151 59L136 79L111 83Z" fill="#1b354b" fill-opacity=".24"/>
+  <path d="M178 29L193 44L209 54L199 63L188 58L175 83L168 69Z" fill="#0a1e30" fill-opacity=".66"/>
+  <path d="M178 29L174 54L165 68L170 70L150 97L158 60Z" fill="#29455b" fill-opacity=".09"/>
+  <!-- Middle ridge: a long fall from the right-hand summit. -->
+  <path d="M0 110L39 95L74 84L96 78L122 66L146 74L169 70L188 74L222 67L252 60V231H0Z" fill="url(#mid)"/>
+  <path d="M0 110L46 94L96 78L70 104L40 132L0 147Z" fill="#173145" fill-opacity=".22"/>
+  <path d="M96 78L122 66L110 89L119 93L95 117L68 129Z" fill="#1d394d" fill-opacity=".16"/>
+  <path d="M146 74L169 70L188 74L168 91L146 99L127 118L99 128Z" fill="#102b3e" fill-opacity=".36"/>
+  <path d="M252 60L232 92L216 99L199 127L173 143L145 164L175 108L198 91Z" fill="#061725" fill-opacity=".47"/>
+  <!-- Foreground ridges and quiet angular facets, without raster texture. -->
+  <path d="M0 189L28 168L48 163L65 151L91 139L113 130L140 135L171 123L197 130L225 123L252 130V231H0Z" fill="url(#near)"/>
+  <path d="M0 189L48 163L65 151L91 139L113 130L94 152L66 170L43 191L12 209L0 222Z" fill="#19364b" fill-opacity=".19"/>
+  <path d="M113 130L140 135L128 149L101 157L82 177L65 187L92 151Z" fill="#234358" fill-opacity=".09"/>
+  <path d="M171 123L164 148L147 160L123 180L111 208L100 225L91 231H63L108 181L129 165L146 142Z" fill="#061522" fill-opacity=".6"/>
+  <path d="M197 130L225 123L219 145L203 153L178 175L143 194L164 162Z" fill="#17354b" fill-opacity=".12"/>
+  <path d="M0 223L34 209L59 207L78 197L104 196L128 177L149 177L174 168L193 172L224 170L252 177V231H0Z" fill="url(#fore)"/>
+  <path d="M78 197L104 196L128 177L149 177L129 189L114 207L93 220L84 231H34L59 216Z" fill="#1a3b50" fill-opacity=".15"/>
+  <path d="M174 168L193 172L178 188L159 199L153 218L139 231H111L149 195Z" fill="#071624" fill-opacity=".37"/>
+  <path d="M224 170L252 177V231H210L205 215L218 189Z" fill="#061723" fill-opacity=".37"/>
+  <path d="M0 225L43 201L78 182M45 221L78 204L91 199M125 217L157 195L168 190" fill="none" stroke="#395a70" stroke-opacity=".055" stroke-width=".8"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="252" height="445" viewBox="0 0 252 445" preserveAspectRatio="none" fill="none">
+  <defs>
+    <linearGradient id="orbitStroke" x1="0" y1="0" x2="252" y2="445" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#78aee0" stop-opacity=".36"/>
+      <stop offset=".57" stop-color="#4c83b3" stop-opacity=".31"/>
+      <stop offset="1" stop-color="#4c83b3" stop-opacity=".14"/>
+    </linearGradient>
+  </defs>
+  <path d="M-70 5C32 24 117 83 164 159C211 235 216 322 166 390C140 425 94 451 38 467" stroke="url(#orbitStroke)" stroke-width="1.05"/>
+  <path d="M-76 166C12 135 107 154 181 226C236 280 262 366 246 445" stroke="#38628a" stroke-opacity=".28" stroke-width=".9"/>
+  <path d="M-48 376C0 325 45 267 84 194C106 153 129 114 155 78" stroke="#3b6792" stroke-opacity=".105" stroke-width=".8"/>
+  <path d="M-38 253L158 111" stroke="#5180a7" stroke-opacity=".095" stroke-width=".65"/>
+  <circle cx="168" cy="166" r="5.7" fill="#4b88bd" fill-opacity=".83"/>
+</svg>

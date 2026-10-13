@@ -1,0 +1,175 @@
+{
+  "name": "Tom de Groot",
+  "role": "AI engineer",
+  "specialism": "System and algorithm design, math and ML research",
+  "location": "Groningen region, Netherlands",
+  "profile": "I work as an agentic engineer on full stack design, algorithms, and mathematical proofs and formalizations. At SoundImports I am the project owner of Acqui, our in-house purchasing and data analysis tool. Outside work, I co-authored a set theory preprint and orchestrated its full formalization in Lean. I like creating and solving competitive programming puzzles. Besides that, I play Magic: The Gathering and squash, go bouldering, and like hiking.",
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Tomodovodoo",
+      "lines": [
+        "github.com/",
+        "Tomodovodoo"
+      ],
+      "icon": "github"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/tomodovodoo/",
+      "lines": [
+        "linkedin.com/in/",
+        "tomodovodoo"
+      ],
+      "icon": "linkedin"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/Tomodovodoo",
+      "lines": [
+        "x.com/",
+        "Tomodovodoo"
+      ],
+      "icon": "x-twitter"
+    }
+  ],
+  "sections": [
+    {
+      "id": "experience",
+      "title": "Experience",
+      "entries": [
+        {
+          "title": "AI engineer",
+          "organization": "SoundImports",
+          "organization_url": "https://www.soundimports.eu/en/",
+          "date": "Current",
+          "bullets": [
+            "Project owner of Acqui, SoundImports' in-house purchasing and data analysis tool.",
+            "Build the application end to end: algorithms, AWS hosting, data lake design, and UI/UX."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "title": "Research and formalization",
+      "entries": [
+        {
+          "title": "Vopěnka's Principle without Choice: Preservation under Symmetric Extensions",
+          "url": "https://arxiv.org/abs/2609.06856",
+          "date": "September 2026",
+          "class": "publication",
+          "authors": "Tom de Groot and Wojciech Aleksander Wołoszyn",
+          "publication": {
+            "label": "Preprint, arXiv:2609.06856",
+            "url": "https://arxiv.org/abs/2609.06856"
+          },
+          "bullets": [
+            "Co-authored our paper using initial AI-led proofs, rewriting and adding substantially to them.",
+            "Led the orchestration of a 300,000-line Lean proof over 5 days, repairing and auditing upstream papers and arguments along the way."
+          ]
+        },
+        {
+          "title": "First Proof, Problem 9",
+          "url": "https://github.com/Tomodovodoo/firstproof",
+          "date": "February 2026",
+          "bullets": [
+            "Built a persistent pipeline for a Lean-verified solution in 3 days and 2,500 lines of Lean. Daniel Litt identified it as the only credible formalized solution he knew of."
+          ],
+          "bullet_urls": [
+            "https://www.daniellitt.com/blog/2026/2/20/mathematics-in-the-library-of-babel/"
+          ]
+        },
+        {
+          "title": "Open-source formalization",
+          "date": "2026",
+          "bullets": [
+            "Prill's problem on Daniel Litt's problem list: solved in all genera with GPT-5.6.",
+            "New Foundations: 17,174-line Lean proof that NF refutes the weak partition principle.",
+            "PrimeNumberTheoremAnd: merged Lean proofs built with Aristotle and AI agents."
+          ],
+          "bullet_urls": [
+            "https://www.problemsilike.com/14",
+            "https://github.com/Tomodovodoo/NF_neg_WPP",
+            "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd/pulls?q=is%3Apr+author%3ATomodovodoo+is%3Amerged"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "engineering",
+      "title": "Algorithmic and systems engineering",
+      "entries": [
+        {
+          "title": "HeXO",
+          "url": "https://github.com/Tomodovodoo/HeXO",
+          "date": "2026",
+          "bullets": [
+            "Built and trained a self-play MCTS engine with custom GPU kernels written in Triton, and designed a novel graph-search scheduling algorithm for it."
+          ]
+        },
+        {
+          "title": "MoleculeResolver",
+          "url": "https://github.com/MoleculeResolver/molecule-resolver/pull/36",
+          "date": "2026",
+          "bullets": [
+            "Refactored the system design and improved its RDKit stereochemistry scoring."
+          ]
+        },
+        {
+          "title": "Bazaar_ML, ParetoProof, Alternaut, ProjectEulerBot",
+          "bullets": [
+            "ML training environment for The Bazaar, plus other systems projects and contributions."
+          ]
+        },
+        {
+          "title": "Competitive programming",
+          "url": "https://www.codewars.com/users/Tomodovodoo",
+          "bullets": [
+            "Create and solve competitive programming puzzles, including five kata on Codewars."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "entries": [
+        {
+          "title": "BSc Chemistry",
+          "organization": "University of Groningen",
+          "date": "2021 to 2025",
+          "thesis": "Evaluating and Optimizing NMR Prediction with Graph Neural Networks",
+          "bullets": [
+            "Worked on graph neural network methods for NMR prediction in the Pollice Group. Created clean datasets and ran hyperparameter optimization with Optuna on HPC using Slurm."
+          ]
+        }
+      ]
+    }
+  ],
+  "recognition": [
+    {
+      "title": "Harmonic Rising Mathematician Award",
+      "url": "https://www.harmonic.fun/news/mathematician-sponsorships/"
+    },
+    {
+      "title": "Chess.com Member of the Year 2021",
+      "url": "https://www.chess.com/news/view/2021-chesscom-awards-winners#member"
+    },
+    {
+      "title": "Caltech Mathathon 2026, accepted participant",
+      "url": "https://mathathonchallenge.com/"
+    }
+  ],
+  "languages": "Dutch, English",
+  "portrait": {
+    "source": "assets/portrait-original.png",
+    "alt": "Profile photograph of Tom de Groot",
+    "remove_background": true,
+    "texture_tint": [
+      120,
+      166,
+      201
+    ]
+  }
+}
